@@ -31,6 +31,7 @@ const DUMMY_EXPENSES = [
 
 const App = () => {
   const [expenses, addExpenses] = useState(DUMMY_EXPENSES)
+  const [newExpenseOption, setNewFormOption] = useState('addNewExpense')
 
   const addExpenseHandler = (expense) => {
     addExpenses((prevExpenses) => {
